@@ -1,0 +1,2 @@
+Aqui se guardan todos los archivos que se usan en el sitio web
+Here are saved all the files that the website uses.

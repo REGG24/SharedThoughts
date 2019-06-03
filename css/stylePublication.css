@@ -1,0 +1,45 @@
+body
+{
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+}
+
+.main{
+    width:60%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+
+.title{
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 2rem;
+}
+
+.image{
+    width:100%;
+    margin: 1rem auto;
+    text-align: center;
+    height: auto;
+}
+
+
+@media(max-width:1000px){
+    .main{
+        width:70%;
+    }     
+}
+
+@media(max-width:768px){
+    .main{
+        width:80%;
+    }  
+}

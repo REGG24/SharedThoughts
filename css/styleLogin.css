@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+}
+
+form
+{
+    margin: auto;
+    width: 50%;
+    max-width: 500px;
+    background-color: rgba(192, 192, 128, 0.5);
+    padding: 30px;
+}
+
+h2
+{
+    text-align: center;
+    margin-bottom:  20px;
+    color: rgba(0,0,0,3);
+}
+
+h4
+{
+    text-align: center;
+    margin-bottom:  20px;
+    color: rgba(0,0,0,.6);
+}
+
+input
+{
+    display: block;
+    padding: 10px;  
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.centered{
+    width: 100%;
+}
+
+input[type="submit"]
+{
+    background: linear-gradient(#FFDA63, #FFB940);
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"]:hover{
+background: #d8d060;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+#create{ /*El link para abrir la pagina de registro*/
+    float: right;
+    font-size: .9rem;
+}
+
+input[type="checkbox"]
+{
+    width: 8%;
+    transform: scale(1.9);
+    float: left;
+}
+
+
+
+
+@media(max-width:768px){
+  form{
+      width: 75%;
+  }
+}
+
+@media(max-width:468px){
+    form{
+        width: 95%;
+    }
+  }

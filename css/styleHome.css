@@ -1,0 +1,129 @@
+html {/*ayudar a que el footer se quede hasta abajo*/
+  min-height: 100%;
+  position: relative;
+}
+
+/*ayudar a que el footer se quede hasta abajo*/
+body {
+  margin: 0;
+  margin-bottom: 40px;
+  
+}
+
+footer {
+  /*ayudar a que el footer se quede hasta abajo*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+   
+
+  background:  #333;
+  text-align: center;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+footer p{
+  margin: 0 auto;
+  text-indent: 1cm;
+}
+
+
+
+
+
+
+div.gallery {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 11rem;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align:justify;
+  }
+
+  div.title {
+    padding: 15px;
+    text-align:center;
+    font-family: fantasy; 
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    
+  }
+  
+  .main{
+   width:60%;
+   margin: 0 auto;
+   padding-bottom: 10rem;
+   overflow: hidden;/*Muy importante, sin esta linea las imagenes se meten dentro del footer*/
+  }
+
+  .gallery a{
+    text-decoration: none;
+    color: rgb(59, 58, 58);
+  }
+
+
+
+  
+
+ 
+  
+  @media only screen and (max-width: 1300px) {
+    div.gallery img {
+      height: 8rem;
+    }
+
+    .responsive {
+      width: 33%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    
+    
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 850px) {
+    .main{
+      width: 80%;
+    }
+    div.gallery img {
+      height: 12rem;
+    }
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

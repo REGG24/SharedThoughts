@@ -1,0 +1,217 @@
+body{ /*este body sera general, puesto que el header se usara en todas partes*/
+    font-family: Georgia,times,serif;
+    color: #333;
+    font-size: 1.3rem;
+    line-height: 1.4em;
+    margin: 0;
+    
+}
+
+
+.container {
+    width: 85%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.header{
+
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    position: fixed;/*la posicion del header será fijo*/
+    left: 0;
+    top: 0;
+    right: 0; /*o bien width:100%;*/
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{ 
+   letter-spacing: 5px;
+   font-size:  1.3em;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+    position: relative;/*multinivel*/
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition:  all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+    background: #4a4a4a;
+}
+
+/*multinivel*/
+.navigation ul ul{
+    position: absolute;
+    display: none;
+}
+
+
+
+/*multinivel*/
+.navigation li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: block;
+}
+
+/*multinivel*/
+.navigationSettings
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 100%;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;   
+}
+
+/*multinivel*/
+.navigationSettings > li
+{
+    position: relative;
+    height: 100%;
+    background: #333;
+
+    padding: 0.5rem 1rem;
+    transition:  all 0.4s linear;
+    border-radius: 5px;
+    border-bottom:1px solid rgb(105, 104, 104);
+    width: 100%;
+}
+.navigationSettings > li:hover { background: #4a4a4a; }/*multinivel*/
+
+
+
+.main {
+    padding-top:10rem;
+}
+
+
+
+ /*multinivel*/
+ .settings{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .header{
+        padding: 1rem 0;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+    
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show {
+        display: block;        
+    }
+   
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .navigation ul li{
+        display: block;
+        
+    }
+    
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 0;
+        transition:  all 0.4s linear;
+        border-radius: 5px;
+    }
+    
+    .navigation ul li a:hover{
+        background: #4a4a4a;
+    }
+
+
+    /*mulilevel begins here*/
+
+    .navigation ul ul.show {
+        display: none;        
+    }
+
+    .navigation ul ul.visible{
+     position: relative;
+     display: block;
+    }
+
+    .navigationSettings
+    {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     right: 100%;
+     width: 150px;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: none;   
+    }
+
+    .navigationSettings > li
+    {
+     position: relative;
+     height: 100%;
+     background: #333;
+
+     padding: 0.5rem 1rem;
+     transition:  all 0.4s linear;
+     border-radius: 5px;
+     border-bottom:1px solid rgb(105, 104, 104);
+     width: 100%;
+    }
+    
+    .navigationSettings > li:hover { background: #4a4a4a; }  
+}
+
+@media only screen and (max-width: 700px) {
+
+ body{ /*este body sera general, puesto que el header se usara en todas partes*/
+   font-size: 1rem;   
+ }
+}
